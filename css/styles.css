@@ -1,13 +1,18 @@
 body {
-    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+    font-family: "Libre Baskerville", Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: aliceblue;
     margin: 0;
     transition: all 0.3s ease-in-out;
+    background-image: url('../img/books-bg.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: bottom left; 
+    background-attachment: fixed; 
 }
 
 body.search-active {
@@ -26,7 +31,11 @@ body.search-active {
     margin: 0;
     font-size: 70px;
     transition: all 0.3s ease-in-out;
-    transform: translateX(-50%);    
+    transform: translateX(-50%);                  
+}
+
+span {
+    color: #BF2604;
 }
 
 
@@ -56,21 +65,49 @@ body.search-active .header h1 {
 }
 
 .search-container input {
+    border: 1px solid #BF834E;
+    border-radius: 3px;
+    background-color: aliceblue;
     padding: 10px;
     font-size: 16px;
     flex: 1;
+    width: 350px;
 }
 
+
+input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        textarea:-webkit-autofill,
+        textarea:-webkit-autofill:hover,
+        textarea:-webkit-autofill:focus,
+        select:-webkit-autofill,
+        select:-webkit-autofill:hover,
+        select:-webkit-autofill:focus {
+            border: 2px solid #BF834E; 
+            -webkit-text-fill-color: #0A0C09;
+            -webkit-box-shadow: 0 0 0px 1000px aliceblue inset; 
+            transition: background-color 5000s ease-in-out 0s;
+        }
+
+
 .search-container button {
+    border: 1px solid #BF834E;
+    border-radius: 3px;
+    background-color: #BF2604;
+    color: aliceblue;
     padding: 10px;
     font-size: 16px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .results {
+    border: 1px solid #BF834E;
+    border-radius: 3px;
     width: 80%;
     max-width: 800px;
-    background-color: white;
+    background-color: aliceblue;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
@@ -80,7 +117,7 @@ body.search-active .header h1 {
 }
 
 .book-item {
-    margin-bottom: 50px;
+    margin-top: 30px;
     cursor: pointer;
 }
 
@@ -95,24 +132,38 @@ body.search-active .header h1 {
 }
 
 .book-description {
-    margin-top: 10px;
-    color: #333;
+    margin-top: 25px;
+    color: #0A0C09;
     font-size: 14px;
+    border-bottom: 1px solid #BF2604;
 }
 
-@media (min-width: 769px) and (max-width: 992px){
+@media (min-width: 992px) {
     .header h1 {
         white-space: nowrap;
         font-size: 70px;
     }
 }
 
-@media (min-width: 601px) and (max-width: 768px){
+@media (min-width: 769px) and (max-width: 992px) {
+    .header h1 {
+        white-space: nowrap;
+        font-size: 70px;
+    }
+
+    .search-container.top {
+        margin-top: 60px;
+    }
+            
+}
+
+@media (min-width: 601px) and (max-width: 769px) {
     
     .header h1 {
-        top: 22%;
+        top: 20%;
         white-space: nowrap;
         font-size: 60px;
+        
     }
 
     .search-container.top {
@@ -121,24 +172,60 @@ body.search-active .header h1 {
     
 }
 
-@media (min-width: 414px) and (max-width: 600px){
+@media (min-width: 414px) and (max-width: 601px) {
     .header h1 {
-        top: 20%;
-        font-size: 50px;
+        top: 17%;
+        font-size: 45px;
+    }
+
+    .centered {
+        flex-direction: column;
+        row-gap: 15px;
+        padding-bottom: 50px;
     }
 
     .search-container.top {
         margin-top: 60px;
     }
+
+    .search-container input {
+        width: 250px;
+    }
+
+    .book-item {
+        font-size: 13px;
+    }
+
+    .book-description {
+        font-size: 11px;
+    }
 }
 
-@media (max-width: 413px){
+@media (max-width: 414px) {
     .header h1 {
-        top: 20%;
+        top: 15%;
         font-size: 40px;
     }
 
+    .centered {
+        flex-direction: column;
+        row-gap: 15px;
+        
+    }
+
     .search-container.top {
         margin-top: 60px;
+    }
+
+    .search-container input {
+        width: 200px;       
+    }
+
+    .book-item {
+        font-size: 13px;
+    }
+
+    .book-description {
+        font-size: 11px;
     }
 }
