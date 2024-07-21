@@ -11,7 +11,7 @@ body {
     background-image: url('../img/books-bg.jpg'); 
     background-size: cover; 
     background-repeat: no-repeat; 
-    background-position: bottom left; 
+    background-position: left; 
     background-attachment: fixed; 
 }
 
@@ -26,16 +26,14 @@ body.search-active {
 
 .header h1 {
     position: absolute;
-    top: 23%;
+    top: 20%;
     left: 50%;
     margin: 0;
     font-size: 70px;
     transition: all 0.3s ease-in-out;
-    transform: translateX(-50%);                  
-}
-
-span {
-    color: #BF2604;
+    transform: translateX(-50%);   
+    text-shadow: 2px 2px 4px rgba(191, 38, 4, 0.5);
+               
 }
 
 
@@ -94,7 +92,7 @@ input:-webkit-autofill,
 .search-container button {
     border: 1px solid #BF834E;
     border-radius: 3px;
-    background-color: #BF2604;
+    background-color: rgb(191, 38, 4);
     color: aliceblue;
     padding: 10px;
     font-size: 16px;
