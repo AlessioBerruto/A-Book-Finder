@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
             await fetchBooksByCategory(category);
         }
     });
-        
+
     async function fetchBooksByCategory(category) {
         showLoading(true);
         try {
@@ -92,3 +92,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+

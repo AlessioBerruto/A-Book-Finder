@@ -8,11 +8,11 @@ body {
     background-color: aliceblue;
     margin: 0;
     transition: all 0.3s ease-in-out;
-    background-image: url('../img/books-bg.jpg'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: left; 
-    background-attachment: fixed; 
+    background-image: url('../img/books-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
 }
 
 body.search-active {
@@ -31,9 +31,8 @@ body.search-active {
     margin: 0;
     font-size: 70px;
     transition: all 0.3s ease-in-out;
-    transform: translateX(-50%);   
+    transform: translateX(-50%);
     text-shadow: 2px 2px 4px rgba(191, 38, 4, 0.5);
-               
 }
 
 
@@ -74,25 +73,25 @@ body.search-active .header h1 {
 
 
 input:-webkit-autofill,
-        input:-webkit-autofill:hover,
-        input:-webkit-autofill:focus,
-        textarea:-webkit-autofill,
-        textarea:-webkit-autofill:hover,
-        textarea:-webkit-autofill:focus,
-        select:-webkit-autofill,
-        select:-webkit-autofill:hover,
-        select:-webkit-autofill:focus {
-            border: 2px solid #BF834E; 
-            -webkit-text-fill-color: #0A0C09;
-            -webkit-box-shadow: 0 0 0px 1000px aliceblue inset; 
-            transition: background-color 5000s ease-in-out 0s;
-        }
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 2px solid #BF834E;
+    -webkit-text-fill-color: #0A0C09;
+    -webkit-box-shadow: 0 0 0px 1000px aliceblue inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
 
 
 .search-container button {
     border: 1px solid #BF834E;
     border-radius: 3px;
-    background-color: rgb(191, 38, 4);
+    background-color: #BF2604;
     color: aliceblue;
     padding: 10px;
     font-size: 16px;
@@ -106,11 +105,11 @@ input:-webkit-autofill,
     width: 80%;
     max-width: 800px;
     background-color: aliceblue;
-    padding: 20px;
+    padding: 0 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
     max-height: 70vh;
-    display: none; 
+    display: none;
     transition: all 0.3s ease-in-out;
 }
 
@@ -152,22 +151,22 @@ input:-webkit-autofill,
     .search-container.top {
         margin-top: 60px;
     }
-            
+
 }
 
 @media (min-width: 601px) and (max-width: 769px) {
-    
+
     .header h1 {
         top: 20%;
         white-space: nowrap;
         font-size: 60px;
-        
+
     }
 
     .search-container.top {
         margin-top: 60px;
     }
-    
+
 }
 
 @media (min-width: 414px) and (max-width: 601px) {
@@ -208,7 +207,7 @@ input:-webkit-autofill,
     .centered {
         flex-direction: column;
         row-gap: 15px;
-        
+
     }
 
     .search-container.top {
@@ -216,7 +215,7 @@ input:-webkit-autofill,
     }
 
     .search-container input {
-        width: 200px;       
+        width: 200px;
     }
 
     .book-item {
