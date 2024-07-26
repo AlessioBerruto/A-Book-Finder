@@ -8,7 +8,6 @@ A simple web application that allows you to search for books by category and vie
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
