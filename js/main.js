@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultsContainer = document.getElementById('results');
     const searchContainer = document.querySelector('.search-container');
     let activeBookItem = null;
-    let isLoading = false; // Nuova variabile di stato
+    let isLoading = false; 
 
     searchButton.addEventListener('click', async () => {
         const category = document.getElementById('category').value.trim();
