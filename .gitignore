@@ -1,4 +1,4 @@
 node_modules/   # Ignora la cartella node_modules
 
 dist/           # Ignora la cartella dist
-node_modules
+
